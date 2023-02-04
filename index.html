@@ -4,10 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Git Commit</title>
+    <title>Registration Form</title>
 </head>
 <body>
-    <p>HI this is my first git commit </p>
-    <p>this is the second line</p>
+    <h1 id="title">Zeyar's Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+            <fieldset>
+                    <label for="name-label">Name<input id="name" name="name" type="text" placeholder="Enter your name" required></label>
+            </fieldset>
+            <fieldset>
+                    <label for="email-label">Email <input id="email" name="email" type="email" placeholder="Enter your Email" required></label>
+             </fieldset>
+             <fieldset>
+                    <label for="number-label">Age (optional) <input id="age" type="number" placeholder="Age" required min="0" max="100"></label>
+            </fieldset>
+            <fieldset>
+                    <label for="current_role">Which option describes your current role
+                        <select id="dropdown" name="dropdown">
+                            <option value="">Please choose one of the current roles</option>
+                            <option value="1">Student</option>
+                            <option value="2">Software Developer</option>
+                            <option value="3">Teacher</option>
+                            <option value="4">Cloud Computing Engineer</option>
+                        </select>
+                    </label>
+            </fieldset>
+            <fieldset>
+                <p>Would you recommend this survery to other people?</p>
+                <label for="recommendation1"><input type="radio" name="recommendation" id="recommendation1" class="inline">Definetly</label>
+                <label for="recommendation2"><input type="radio" name="recommendation" id="recommendation2" class="inline">Maybe</label>
+                <label for="recommendation3"><input type="radio" name="recommendation" id="recommendation3" class="inline">Highly unlikely</label>
+                <label for="recommendation4"><input type="radio" name="recommendation" id="recommendation4" class="inline">No</label>
+            </fieldset> 
+            <fieldset>
+                <p>What would you like to see improved? <span class="clue">Check all that apply</span></p>
+                <label for="improvement1"><input type="checkbox" name="Improvement1" id="improvement1">Front End Projects</label>
+                <label for="improvement2"><input type="checkbox" name="Improvement2" id="improvement2">Back End Projects</label>
+                <label for="improvement3"><input type="checkbox" name="Improvement3" id="improvement3">Cloud Computing</label>
+                <label for="improvement4"><input type="checkbox" name="Improvement4" id="improvement4">JavaScript</label>
+                <label for="improvement5"><input type="checkbox" name="Improvement5" id="improvement5">Algorithms</label>
+            </fieldset>
+            <fieldset>
+                <label for="comments_and_suggestions">Any comments or suggestions?<textarea name="comments_and_suggestions" id="comments_and_suggestions" cols="30" rows="3" placeholder="Enter your comment here...."></textarea>
+                </label>
+            </fieldset>
+            <input type="submit" value="Submit" />
+     </form>
 </body>
 </html>
